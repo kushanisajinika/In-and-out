@@ -1,0 +1,29 @@
+{
+  "name": "in-and-out",
+  "version": "1.0.0",
+  "description": "this is directory for the web site project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushanisajinika/In-and-out.git"
+  },
+  "author": "kushani sajinika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kushanisajinika/In-and-out/issues"
+  },
+  "homepage": "https://github.com/kushanisajinika/In-and-out#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
