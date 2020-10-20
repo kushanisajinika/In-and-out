@@ -2,25 +2,107 @@
     <head>
         <title> In & Out </title>
             <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/styles.css">
+            <link rel="javascript" href="scripts.js">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playball&family=Rye&family=Sedgwick+Ave&family=Walter+Turncoat&display=swap" rel="stylesheet"> 
+            <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+            <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     </head>
-    <body>
-        <header class="jumbotron">
-        <h1> In & Out</h1>
-        <p> </p>
-    </header>
+  
+    <div class="container-fluid">
+        <div class="row row-content">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="order.html">Menu online-order</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+                <div class="bg-img"></div>
+                 <h1 id="title">IN & OUT</h1>
+              <p>Life Food is not only a health-conscious restaurant in Colombo, but also a place to treat the 
+                “foodie” in you. Made with locally sourced produce and a healthy life style in mind,
+                 our food is wholesome, nutritious, fresh and a reflection of the way we love to eat every day.
+                 <span id="dots">.........</span><span id="more">Serving all-day breakfast, crunchy salads, perfectly toasted sandwiches, hunger busting healthy
+                   meals, fresh juices and much-loved dishes from around the world with our own little twists. 
+                   Drop in at Life Food for a hearty meal and a friendly chat with us.</span></p>
+                   <a href="#" onclick="myFunction()" id="link">Read more</a>
 
-        
-    </body>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 address">
+            <p class="address"><strong>In and Out</strong><br>
+              No. 245, Main Street, Kurunegala,<br>
+              Sri Lanka<br><br>
+              
+              <strong>Opening Hours</strong><br>
+              Open 7 Days a Week<br>
+              Take Out & Delivery: 4pm - 9pm<br>
+              (035) 647-9525<br>
+              <a href="#">in&out@gmail.com<br><br></a>
+              
+              <strong>Subscribe to our Newsletter</strong></p>
+              <form class="form-inline justify-content-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter your email" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign up</button>
+              </form>
+          </div>
+        </div>
+        <div class="row footer">
+          <div class="col-lg-12">
+            <p class="footer"> <strong>2020 In & Out</strong><br>
+              @All rights recerved<br><br>
+              
+                <strong> Terms & Privacy Policy Reserve Now</strong> </p>
+          </div>
+        </div>
+    </div>
+    <body>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("link");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+      </body>
 </html>
